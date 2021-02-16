@@ -3,7 +3,7 @@ name: Build and push the tagged build to production
 on:
   push:
     tags:
-      - 'v*'
+      - '*'
 
 jobs:
   build_push_image:
