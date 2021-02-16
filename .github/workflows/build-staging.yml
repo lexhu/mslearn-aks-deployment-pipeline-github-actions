@@ -38,3 +38,16 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           resource-group: mslearn-gh-pipelines-12349
           cluster-name: contoso-video
+          
+      - name: Run Helm Deploy
+        run: |
+          helm upgrade \
+            --install \
+            --create-namespace \
+            --atomic \
+            --wait \
+            --namespace staging \
+            contoso-website \
+            ./kubernetes/contoso-website \
+            --set image.repository=${{ secrets.ACR_NAME }} \
+            --set dns.name=${{ secrets.DNS_NAME }}
