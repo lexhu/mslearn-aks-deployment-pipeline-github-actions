@@ -1,5 +1,5 @@
 image:
-  repository: ContosoContainerRegistry5445
+  registry: ContosoContainerRegistry5445
   name: contoso-website
   tag: latest
 
