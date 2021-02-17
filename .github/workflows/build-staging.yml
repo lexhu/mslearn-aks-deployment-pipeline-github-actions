@@ -42,6 +42,5 @@ jobs:
       - name: Run Helm Deploy
         run: |
           helm install \
-            --namespace staging \
             contoso-website \
-            ./kubernetes/contoso-website
+            ./kubernetes/contoso-website/
