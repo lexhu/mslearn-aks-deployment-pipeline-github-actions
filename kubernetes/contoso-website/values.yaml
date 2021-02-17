@@ -1,8 +1,8 @@
 image:
-  registry: ContosoContainerRegistry5445
+  registry: ContosoContainerRegistry5735
   name: contoso-website
   tag: latest
 
 
 dns:
-  name: 4aa435ab7ee04eacb8e8.eastus.aksapp.io
+  name: 2fba517ccdcd432ba024.eastus.aksapp.io
