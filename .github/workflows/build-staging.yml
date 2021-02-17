@@ -44,4 +44,4 @@ jobs:
           helm install \
             --namespace staging \
             contoso-website \
-            ./kubernetes/contoso-website \
+            ./kubernetes/contoso-website
